@@ -136,7 +136,7 @@
                     ArmletAutoToggle = autoToggle.IsActive();
 
                     var armletHpThreshold =
-                        new MenuItem("armletHpThreshold", "Minimum hp").SetValue(new Slider(222, 100, 300));
+                        new MenuItem("armletHpThreshold", "Minimum hp").SetValue(new Slider(222, 100, 450));
                     armletMenu.AddItem(armletHpThreshold);
                     armletHpThreshold.ValueChanged +=
                         (sender, args) => ArmletHpThreshold = args.GetNewValue<Slider>().Value;
